@@ -442,12 +442,72 @@ a {
 
 .resume {
     margin-top: 100px;
-    position:relative;
-    left:200px;
-    width: 50%
+    
+    
+    background-color: rgb(27, 23, 55);
 }
-.ed {
+
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #a185ee;
     color: white;
-    font-size: 40px;
-    text-decoration: underline;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #af8cf1;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #382758;
+    padding: 20px;
+  }
+
+.contactme {
+color: white;
+}
+  
+  
+
+.footer {
+    
+}
+
+.fa-facebook-square {
+    color: white;
+    font-size: 25px;
+    padding-right: 25px;
+}
+
+.fa-instagram {
+    padding-right: 25px;
+}
+
+.fa-github-square {
+    padding-right: 25px;
+}
+
+.socials {
+    padding-top: 100px;
+    background-color: gray;
+    font-size: 25px;
+    color: white;
+    padding: 25px;
+    text-align: center;
 }
