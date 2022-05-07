@@ -86,19 +86,16 @@ h1 {
 }
 }
 
-.downarrow {
+.downarrow2 {
     position: absolute;
     right: 0;
     left: 0;
     top: 0;
     bottom: 0;
-    padding-top: 400px;
+    padding-top: 350px;
 }
 
-/* @media only screen and (max-width: 400px) {
-  .downarrow {
-    padding-top: 350px;
-  } */
+
 
 
 
