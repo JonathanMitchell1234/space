@@ -24,6 +24,7 @@ body {
     min-width: 100%;
     min-height: 100vh;
     
+    
   }
   .overlay {
     width: 100%;
@@ -33,6 +34,7 @@ body {
     left: 0;
     background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
     background-size: 3px 3px;
+   
    
   }
   h1 {
@@ -44,12 +46,19 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 3;
+    z-index: 1;
     max-width: 400px;
     width: 100%;
     height: 50px;
     font-size: 75px
   }
+
+  
+
+  .github-button {
+      width: 500px;
+  }
+  
 
   .fa-rocket {
       color: white;
@@ -277,8 +286,7 @@ a {
 }
 
 .profilepic {
-    animation-name: zoom-in;
-	animation-duration: 1s;
+    
 }
 
 @keyframes zoom-in {
@@ -485,6 +493,7 @@ input[type=text], select, textarea {
     border-radius: 25px;
     background-color: #382758;
     padding: 20px;
+    margin-bottom: 30px;
 
   }
 
@@ -570,7 +579,7 @@ color: white;
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbb;
+    background-color: #a185ed;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
