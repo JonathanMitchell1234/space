@@ -668,7 +668,7 @@ color: white;
 
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 240px;}
+  to{width: 248px;}
 }
 
 /* cursor animations */
