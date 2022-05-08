@@ -298,6 +298,7 @@ box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.81);
   float:right;
   color: white;
   
+  
 }
 
 .fa-person {
@@ -391,11 +392,13 @@ transform: rotateX(180deg);
 
 .technology {
   text-align: center;
+  display: none;
   
 }
 .tech {
   color: white;
   font-size: 50px;
+  
 }
 
 .fa-js {
@@ -431,7 +434,7 @@ transform: rotateX(180deg);
 }
 
 .stack {
-  
+ text-align: center;
   
 }
 
@@ -557,7 +560,7 @@ color: white;
   bottom: 8px;
   width: 100%;
   text-align: center;
-  padding-bottom: 120px;
+  padding-bottom: 150px;
 }
 
 /* Number text (1/3 etc) */
@@ -566,8 +569,9 @@ color: white;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
-  padding-top: 50px;
+  top: 60px;
+  
+  
 }
 
 /* The dots/bullets/indicators */
@@ -580,6 +584,9 @@ color: white;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  
+  
+
   
 }
 
@@ -638,3 +645,35 @@ color: white;
 }
 
 
+.typewriter {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(255,255,255,.70);
+  
+}
+
+/* Animation */
+.typewriter {
+  
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+  
+
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 150px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: rgba(0,255,0,.75);}
+  to{border-right-color: transparent;}
+}

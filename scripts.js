@@ -53,3 +53,20 @@ function showSlides(n) {
 
 
 
+const hosp = document.querySelectorAll('.typewriter');
+
+
+observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('typewriter');
+    } else {
+      entry.target.classList.remove('typewriter');
+    }
+  });
+});
+
+hosp.forEach(hosp => {
+  observer.observe(hosp);
+});
+
