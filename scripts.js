@@ -71,7 +71,7 @@ hosp.forEach(hosp => {
 });
 
 
-let observedElements = document.querySelectorAll('.inview-element'); // Define the elements you want to intiate an action on
+let observedElements = document.querySelectorAll('.contact'); // Define the elements you want to intiate an action on
 
 const options = { //define your options
   threshold: 0.5 //50% of the element in view
