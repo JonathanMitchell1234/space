@@ -484,9 +484,15 @@ input[type=submit]:hover {
 }
 .fa-instagram {
   padding-right: 25px;
+  color: white;
 }
 .fa-github-square {
   padding-right: 25px;
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
 }
 .socials {
   padding-top: 100px;
