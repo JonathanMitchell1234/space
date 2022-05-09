@@ -387,7 +387,7 @@ input[type=submit]:hover {
 .contactme {
   color: white;
 }
-.contact {
+.test {
   animation-name: flyin-left;
 	animation-duration: 1s;
 }

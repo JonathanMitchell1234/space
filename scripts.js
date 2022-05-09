@@ -71,25 +71,38 @@ hosp.forEach(hosp => {
 });
 
 
+let observedElements = document.querySelectorAll('.inview-element'); // Define the elements you want to intiate an action on
 
-// Fly In left 
-var elem2 = $(".contact");
-function isScrolledIntoView(elem2) {
-    var docViewTop = $(window).scrollTop() + 400;
-    var docViewBottom = docViewTop + $(window).height() - 400;
-	
-    var elemTop = elem2.offset().top;
-    var elemBottom = elemTop + elem2.height();
-	
-    return (docViewBottom <= elemBottom && elemTop <= docViewTop);
+const options = { //define your options
+  threshold: 0.5 //50% of the element in view
 }
-$(document).on("scroll", function () {
-    if (isScrolledIntoView(elem2)) {
-        elem2.addClass("fll");
-				elem2.show();
-				elem2.css('opacity', '1');
+
+const inViewCallback = entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { // define the event/property you want to use
+      entry.target.classList.add('contact');
+      //do something with the element
     }
+  });
+}
+let observer = new IntersectionObserver(inViewCallback,options); // create a new instance using our callback which contains our elements and actions, using the options we defined
+
+observedElements.forEach(element => {
+  observer.observe(element) // run the observer 
 });
 
+// Apply Animation Classes strictly through Javascript for graceful degradation. 
 
+	/* observedElements.forEach(entry => {
+			entry.classList.add('animated');
+	}); 
+
+// Alternatively, can be placed directly in markup
+
+let animatedElements = document.querySelectorAll('.animated');
+animatedElements.forEach(entry => {
+    entry.className  += " animated";
+});
+
+*/
 
