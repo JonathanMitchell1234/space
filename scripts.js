@@ -71,38 +71,3 @@ hosp.forEach(hosp => {
 });
 
 
-let observedElements = document.querySelectorAll('.contact'); // Define the elements you want to intiate an action on
-
-const options = { //define your options
-  threshold: 0.5 //50% of the element in view
-}
-
-const inViewCallback = entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) { // define the event/property you want to use
-      entry.target.classList.add('contact');
-      //do something with the element
-    }
-  });
-}
-let observer = new IntersectionObserver(inViewCallback,options); // create a new instance using our callback which contains our elements and actions, using the options we defined
-
-observedElements.forEach(element => {
-  observer.observe(element) // run the observer 
-});
-
-// Apply Animation Classes strictly through Javascript for graceful degradation. 
-
-	/* observedElements.forEach(entry => {
-			entry.classList.add('animated');
-	}); 
-
-// Alternatively, can be placed directly in markup
-
-let animatedElements = document.querySelectorAll('.animated');
-animatedElements.forEach(entry => {
-    entry.className  += " animated";
-});
-
-*/
-
