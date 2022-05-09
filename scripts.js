@@ -70,3 +70,26 @@ hosp.forEach(hosp => {
   observer.observe(hosp);
 });
 
+
+
+// Fly In left 
+var elem2 = $(".contact");
+function isScrolledIntoView(elem2) {
+    var docViewTop = $(window).scrollTop() + 400;
+    var docViewBottom = docViewTop + $(window).height() - 400;
+	
+    var elemTop = elem2.offset().top;
+    var elemBottom = elemTop + elem2.height();
+	
+    return (docViewBottom <= elemBottom && elemTop <= docViewTop);
+}
+$(document).on("scroll", function () {
+    if (isScrolledIntoView(elem2)) {
+        elem2.addClass("fll");
+				elem2.show();
+				elem2.css('opacity', '1');
+    }
+});
+
+
+
