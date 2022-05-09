@@ -1,3 +1,4 @@
+// Navbar
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -20,7 +21,7 @@ function closeMenu() {
 
 
 
-
+// Slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -52,7 +53,9 @@ function showSlides(n) {
 
 
 
+// Intersection Observers for animations
 
+// Typewriter
 const hosp = document.querySelectorAll('.typewriter');
 
 
@@ -68,6 +71,24 @@ observer = new IntersectionObserver((entries) => {
 
 hosp.forEach(hosp => {
   observer.observe(hosp);
+});
+
+// Slideshow
+const show = document.querySelectorAll('.slides');
+
+
+observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('slides');
+    } else {
+      entry.target.classList.remove('slides');
+    }
+  });
+});
+
+show.forEach(show => {
+  observer.observe(show);
 });
 
 

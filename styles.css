@@ -387,16 +387,16 @@ input[type=submit]:hover {
 .contactme {
   color: white;
 }
-.contact {
-  animation-name: flyin-left;
-	animation-duration: 1s;
+.slides {
+  animation-name: fadein;
+  animation-duration: 5s;
 }
-@keyframes flyin-left { 
+@keyframes fadein {
 	0% {
-		transform: translate(-4000px, 0px);
+		opacity: 0;
 	}
 	100% {
-		transform: translate(0px, 0px);
+		opacity: 1;
 	}
 }
 .fa-phone {
