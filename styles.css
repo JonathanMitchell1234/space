@@ -222,7 +222,7 @@ a {
  }
 }
 .profile {
-  border-radius: 50%;
+  border-radius: 29px;
   -webkit-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.81);
   box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.81);
 }
@@ -592,4 +592,6 @@ input[type=submit]:hover {
   to {
     filter: hue-rotate(360deg);
   }
+}
+
 }
