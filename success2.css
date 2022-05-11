@@ -17,6 +17,9 @@ a {
     color: white;
     font-family: 'Play', sans-serif;
 }
+a:hover {
+  color: rgb(44, 43, 43);
+}
   .arm-left{
   animation: armSwipe 5s 1s infinite ease-in-out;
   transform-origin: left top;
