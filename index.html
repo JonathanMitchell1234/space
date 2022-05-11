@@ -161,7 +161,7 @@
 <section id="contact">
     <div class="contact">
       <div class="container">
-        <form action="post" action="/post.html" data-netlify="true">
+        <form action="post" action="/post.html" data-netlify="true" data-netlify-recaptcha="true">
           <label for="subject">
             <h3 class="contactme">Contact Me <br>
               <br>
@@ -181,6 +181,7 @@
           <textarea id="name" name="name" placeholder="Your name..." style="height:50px"></textarea>
           <textarea id="name" name="name" placeholder="Your e-mail address..." style="height:50px"></textarea>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <div data-netlify-recaptcha="true"></div>
           <input type="submit" value="Submit">
         </form>
       </div>
